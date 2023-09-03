@@ -1,0 +1,268 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%)
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.out-container {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.main-container {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.04);
+  display: grid;
+  width: max-content;
+  grid-template-columns: 300px 300px;
+  border-radius: 20px;
+}
+
+aside {
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid darkred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  background: -webkit-linear-gradient(top, hsla(245, 83%, 58%, 1) 0%, hsla(243, 93%, 51%, 1) 0%, hsla(244, 84%, 67%, 1) 0%, hsla(243, 68%, 52%, 1) 71%, hsla(243, 88%, 52%, 1) 100%);
+}
+
+aside p {
+  font-size: 18px;
+  margin-top: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+
+aside .score {
+  color: hsl(0, 0%, 100%);
+  margin-top: 1rem;
+  color: darkmagenta;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(top, hsla(243, 88%, 52%, 1) 0%, hsla(243, 68%, 52%, 1) 29%, hsla(244, 84%, 65%, 1) 100%);
+  width: 150px;
+  height: 150px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.04);
+}
+
+aside .inner-score {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+aside .score .score-top {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-bottom: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+aside .score .score-bottom {
+  color: chartreuse;
+  color: hsl(0, 0%, 100%);
+  font-size: 10px;
+  margin-top: 0;
+}
+
+aside span {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+aside .remarks {
+  text-align: center;
+  width: 90%;
+  padding-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+main .text-summary {
+  font-size: 25px;
+  margin-left: -8rem;
+  font-weight: 800;
+}
+
+main .Reaction {
+  color: hsl(0, 100%, 67%);
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+  background-color: hsl(0, 100%, 98%);
+  padding: .8rem;
+  border-radius: 10px;
+}
+
+main .Memory {
+  color: hsl(39, 100%, 56%);
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+  background-color: hsl(50, 66%, 98%);
+  padding: .8rem;
+  border-radius: 10px;
+}
+
+main .Verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 98%);
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+  padding: .8rem;
+  border-radius: 10px;
+}
+
+main .Visual {
+  background-color: hsl(234, 85%, 98%);
+  color: hsl(234, 85%, 45%);
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: .8rem;
+  border-radius: 10px;
+}
+
+main .Continue-btn {
+  background-color: hsl(224, 30%, 27%);
+  padding: 1rem;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+main .score-percent {
+  display: flex;
+  gap: 5px;
+}
+
+main span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+}
+
+main .hundred {
+  color: hsl(224, 15%, 75%);
+  font-weight: 600;
+}
+
+main img {
+  margin: -5px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+  }
+
+  .out-container {
+    height: max-content;
+    width: max-content;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside {
+    border-radius: 0 0 30px 30px;
+    width: 375px;
+  }
+
+  aside p {
+    margin-top: 1rem;
+  }
+
+  aside .score {
+    margin-top: 0;
+  }
+
+  aside span {
+    margin-top: 0;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  aside .remarks {
+    width: 65%;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  main .text-summary {
+    font-size: 16px;
+    margin-left: -15rem;
+    margin-bottom: 5px;
+  }
+
+  main .Reaction {
+    margin: 10px 16px 10px 16px;
+  }
+
+  main .Memory {
+    margin: 10px 16px 10px 16px;
+  }
+
+  main .Verbal {
+    margin: 10px 16px 10px 16px;
+  }
+
+  main .Visual {
+    margin: 10px 16px 10px 16px;
+  }
+
+  main .Continue-btn {
+    margin-bottom: 0;
+  }
+
+
+
+
+}
