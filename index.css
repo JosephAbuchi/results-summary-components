@@ -75,7 +75,6 @@ aside .score .score-top {
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 0;
-  margin-bottom: 0;
   color: hsl(0, 0%, 100%);
 }
 
@@ -169,6 +168,11 @@ main .Continue-btn {
   margin-right: 10px;
   margin-bottom: 1rem;
   color: hsl(0, 0%, 100%);
+}
+
+main .Continue-btn:hover {
+  cursor: pointer;
+background: -webkit-linear-gradient(top, hsla(245, 83%, 58%, 1) 0%, hsla(243, 93%, 51%, 1) 0%, hsla(244, 84%, 67%, 1) 0%, hsla(243, 68%, 52%, 1) 71%, hsla(243, 88%, 52%, 1) 100%);
 }
 
 main .score-percent {
